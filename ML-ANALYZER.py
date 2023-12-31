@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import requests
 import streamlit as st
-from streamlit_option_menu import option_menu
 from streamlit_lottie import st_lottie
 from code.DiseaseModel import DiseaseModel
 from code.helper import prepare_symptoms_array
@@ -92,11 +91,6 @@ lottie_coding = load_lottieurl("https://lottie.host/e8cca356-1ed3-4d6d-a263-377f
 
 # sidebar for navigation
 with st.sidebar:   
-    selected = option_menu('',['ML-ANALYZER'],
-                          icons=['person'],
-                          default_index=0,
-                          
-                          )
     st_lottie(
                            lottie_coding,
                            speed=1,
