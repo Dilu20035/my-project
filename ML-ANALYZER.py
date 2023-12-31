@@ -129,7 +129,7 @@ if (selected == 'ML-ANALYZER'):
 
 # Create disease class and load ML model
 disease_model = DiseaseModel()
-disease_model.load_xgboost('C:/Users/Jilshad M/Desktop/Project/MEDI-CHATBOT/ML-DETECTOR/model/xgboost_model.json')
+disease_model.load_xgboost('model/xgboost_model.json')
 
 
 st.markdown("<h1 style='text-align: center;'>Disease Prediction using Machine Learning</h1>", unsafe_allow_html=True)
